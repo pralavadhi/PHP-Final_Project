@@ -1,0 +1,195 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Use Shadows Into Light font for the whole body */
+body {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: larger; /* Adjust the base font size */
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #333; /* Change default text color */
+    text-align: center;
+}
+
+.images{
+    align-items: center;
+    margin-top: 20px;
+    max-width: 100%;
+    max-width: 400px; /* Adjust maximum image width */
+    display: block; /* Center the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center everything on the page */
+.container {
+    width: 90%; /* Adjust container width */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Apply styles to form elements */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="radio"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Make the text box full width */
+    max-width: 300px; /* Limit the maximum width of the text box */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the text box */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Center the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Apply styles to game area */
+.game-area {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Style attempts display */
+.attempts {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.attempts span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/* Style word display */
+.word {
+    margin-top: 20px;
+    font-size: 24px;
+    word-spacing: 20px; /* Add space between letters */
+    align-items: center;
+}
+
+/* Apply styles to input form */
+.input-form {
+    margin-top: 20px;
+}
+
+.input-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-form input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style game over message */
+.game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-over img {
+    margin-top: 20px;
+    max-width: 100%;
+    max-width: 400px; /* Adjust maximum image width */
+}
+
+/* Media query for small screens (phones) */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding-top: 20px; /* Adjust top padding */
+    }
+
+    .game-area {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .word {
+        font-size: 20px; /* Adjust font size */
+        word-spacing: 10px; /* Reduce space between letters */
+    }
+
+    .input-form input[type="text"] {
+        width: calc(100% - 20px); /* Adjust input width */
+    }
+}
+
+/* Media query for small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-top: 20px; /* Adjust top padding */
+    }
+
+    .game-area {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .word {
+        font-size: 1em; /* Adjust font size */
+        word-spacing: 5px; /* Reduce space between letters */
+    }
+
+    .input-form input[type="text"] {
+        width: calc(100% - 20px); /* Adjust input width */
+    }
+}
